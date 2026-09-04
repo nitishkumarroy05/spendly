@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .legal-section {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 5rem 2rem 6rem;
+    }
+    .legal-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.25rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+    }
+    .legal-updated {
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+    }
+    .legal-block {
+        margin-bottom: 2.25rem;
+    }
+    .legal-heading {
+        font-family: var(--font-display);
+        font-size: 1.375rem;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+    .legal-block p {
+        font-size: 0.95rem;
+        color: var(--ink-soft);
+        line-height: 1.7;
+        margin-bottom: 0.75rem;
+    }
+    .legal-block ul {
+        color: var(--ink-soft);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding-left: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    .legal-block li {
+        margin-bottom: 0.5rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="legal-section">
+    <h1 class="legal-title">Privacy Policy</h1>
+    <p class="legal-updated">Last updated: September 4, 2026</p>
+
+    <div class="legal-block">
+        <h2 class="legal-heading">Data We Collect</h2>
+        <p>
+            When you create a Spendly account, we collect the following
+            information:
+        </p>
+        <ul>
+            <li><strong>Account information:</strong> Email address and password (hashed for security).</li>
+            <li><strong>Expense data:</strong> All expense entries you log, including date, amount, category, and optional descriptions.</li>
+            <li><strong>Usage data:</strong> Information about how you interact with the app, such as pages visited and features used.</li>
+        </ul>
+    </div>
+
+    <div class="legal-block">
+        <h2 class="legal-heading">How We Use Your Data</h2>
+        <p>
+            We use the data you provide for the following purposes:
+        </p>
+        <ul>
+            <li>To provide and maintain the Spendly service and enable you to track your expenses.</li>
+            <li>To display your spending history, summaries, and category breakdowns.</li>
+            <li>To improve the service through anonymous usage analytics.</li>
+            <li>To send you service-related notifications (e.g., password reset, account recovery).</li>
+        </ul>
+        <p>
+            We do not sell, trade, or rent your personal financial data to any
+            third party. We will never use your data for marketing purposes
+            without your explicit consent.
+        </p>
+    </div>
+
+    <div class="legal-block">
+        <h2 class="legal-heading">Data Storage</h2>
+        <p>
+            Your data is stored securely on encrypted servers. We implement
+            industry-standard security practices to protect your information
+            from unauthorized access, alteration, disclosure, or destruction.
+            However, no method of transmission over the internet is 100%
+            secure, and we cannot guarantee absolute security.
+        </p>
+        <p>
+            You may request deletion of your account and all associated data
+            at any time by contacting us. Upon deletion, your expense records
+            will be permanently removed from our servers.
+        </p>
+    </div>
+
+    <div class="legal-block">
+        <h2 class="legal-heading">Third Party Services</h2>
+        <p>
+            Spendly uses the following third-party services:
+        </p>
+        <ul>
+            <li><strong>Google Fonts:</strong> For typography. No personal data is shared.</li>
+            <li><strong>Web hosting:</strong> Your data is hosted on secure cloud infrastructure.</li>
+        </ul>
+        <p>
+            These third parties are bound by confidentiality agreements and
+            are not permitted to use your information for any purpose other
+            than providing the services we request.
+        </p>
+    </div>
+
+    <div class="legal-block">
+        <h2 class="legal-heading">Contact Us</h2>
+        <p>
+            If you have questions or concerns about your privacy or this policy,
+            please reach out to us at:
+        </p>
+        <ul>
+            <li><strong>Email:</strong> support@spendly.local</li>
+        </ul>
+        <p>
+            We will respond to your inquiry within 7 business days.
+        </p>
+    </div>
+</section>
+{% endblock %}
